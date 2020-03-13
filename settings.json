@@ -1,0 +1,26 @@
+{
+    //styling
+    "editor.renderWhitespace": "all",
+    "window.menuBarVisibility": "toggle",
+    "workbench.activityBar.visible": false,
+    "window.zoomLevel": 0,
+    "editor.fontSize": 12,
+    "terminal.integrated.fontSize": 12,
+    "workbench.colorCustomizations": {
+        "editor.background": "#1e1e1e",
+    },
+    "editor.minimap.renderCharacters": false,
+    "workbench.colorTheme": "One Monokai",
+
+    //editor functional
+    "terminal.integrated.scrollback": 5000,
+
+    //search functions
+    "search.exclude": {
+        "**/oe-logs/**": true,
+        "**/oe-workdir/**": true
+    },
+
+    "vim.easymotion": true,
+    "workbench.iconTheme": "material-icon-theme",
+}

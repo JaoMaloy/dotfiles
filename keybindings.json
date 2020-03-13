@@ -1,0 +1,61 @@
+// Place your key bindings in this file to override the defaults
+[
+    { "key": "ctrl+right", "command": "workbench.action.terminal.focusNext" },
+    { "key": "ctrl+left", "command": "workbench.action.terminal.focusPrevious" },
+    { "key": "ctrl+shift+1", "command": "workbench.action.moveEditorToPreviousGroup" },
+    { "key": "ctrl+shift+2", "command": "workbench.action.moveEditorToNextGroup" },
+    {
+        "key": "ctrl+shift+`",
+        "command": "workbench.action.terminal.new"
+    },
+    {
+        "key": "ctrl+shift+=",
+        "command": "editor.action.peekDeclaration"
+    },
+    {
+        "key": "ctrl+shift+=",
+        "command": "C_Cpp.PeekDeclaration",
+        "when": "editorTextFocus && editorLangId == 'c'"
+    },
+    {
+        "key": "ctrl+alt+f12",
+        "command": "-C_Cpp.PeekDeclaration",
+        "when": "editorTextFocus && editorLangId == 'c'"
+    },
+    {
+        "key": "ctrl+=",
+        "command": "C_Cpp.GoToDeclaration",
+        "when": "editorTextFocus && editorLangId == 'c'"
+    },
+    {
+        "key": "ctrl+f12",
+        "command": "-C_Cpp.GoToDeclaration",
+        "when": "editorTextFocus && editorLangId == 'c'"
+    },
+    {
+        "key": "ctrl+=",
+        "command": "C_Cpp.GoToDeclaration",
+        "when": "editorTextFocus && editorLangId == 'cpp'"
+    },
+    {
+        "key": "ctrl+f12",
+        "command": "-C_Cpp.GoToDeclaration",
+        "when": "editorTextFocus && editorLangId == 'cpp'"
+    },
+    {
+        "key": "ctrl+=",
+        "command": "editor.action.revealDeclaration"
+    },
+    {
+        "key": "ctrl+-",
+        "command": "workbench.action.keepEditor"
+    },
+    {
+        "key": "ctrl+k enter",
+        "command": "-workbench.action.keepEditor"
+    },
+    {
+        "key": "ctrl+\\",
+        "command": "workbench.action.terminal.splitInActiveWorkspace"
+    }
+]
