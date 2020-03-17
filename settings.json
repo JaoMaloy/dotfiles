@@ -8,6 +8,7 @@
     "terminal.integrated.fontSize": 12,
     "workbench.colorCustomizations": {
         "editor.background": "#1e1e1e",
+        "minimap.background": "#1e1e1e66"
     },
     "editor.minimap.renderCharacters": false,
     "workbench.colorTheme": "One Monokai",
@@ -21,6 +22,77 @@
         "**/oe-workdir/**": true
     },
 
-    "vim.easymotion": true,
     "workbench.iconTheme": "material-icon-theme",
+
+   //vim
+   "vim.leader": " ",
+   "vim.debug.silent": true,
+   "vim.useSystemClipboard": true,
+
+   //keybindings
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["j", "k"],
+            "after": ["<Esc>"]
+        }
+    ],
+   "vim.normalModeKeyBindings": [
+        {
+            "before": ["<leader>", "s"],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.files.save",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": ["<leader>", "q"],
+            "after": [],
+            "commands": [
+                {
+                "command": "workbench.action.closeActiveEditor",
+                "args": []
+                }
+            ]
+        },
+        {
+            "before": ["<leader>", "a"],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.files.save",
+                    "args": []
+                },
+                {
+                    "command": "workbench.action.closeActiveEditor",
+                    "args": []
+                }
+            ]
+        }
+    ],
+
+    //vim-easymotion
+    "vim.easymotion": true,
+
+    //vim-surround
+    "vim.surround": true,
+
+    //vim-commentary
+    "vim.camelCaseMotion.enable": true,
+
+    //vim
+    "vim.replaceWithRegister": true,
+
+    /* 
+        LANGUAGE SPECIFIC SETTINGS
+    */
+    "[html]": {
+        "editor.tabSize": 2
+    },
+    "[javascript]": {
+        "editor.tabSize": 2
+    },
+
 }
