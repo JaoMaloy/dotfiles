@@ -32,55 +32,53 @@ alert = #bd2c40
 margin-top = 5
 margin-bottom = 5
 
-[bar/topbar]
-monitor = ${env:MONITOR:Virtual-1}
-width = 100%
-height = 20
-offset-x = 0
-offset-y = 0
-radius = 0.0
-fixed-center = true
+;[bar/topbar]
+;monitor = ${env:MONITOR:Virtual-1}
+;width = 100%
+;height = 20
+;offset-x = 0
+;offset-y = 0
+;radius = 0.0
+;fixed-center = true
 
-background = ${colors.background}
-foreground = ${colors.top-foreground}
+;background = ${colors.background}
+;foreground = ${colors.top-foreground}
 
-line-size = 0
-;line-color = #f00
+;line-size = 0
+;;line-color = #f00
 
-border-size = 0
-border-color = #00000000
+;border-size = 0
+;border-color = #00000000
 
-padding-left = 5
-padding-right = 5
+;padding-left = 5
+;padding-right = 5
 
-module-margin-left = 2
-module-margin-right = 2
+;module-margin-left = 2
+;module-margin-right = 2
 
-font-0 = Iosevka Regular:style=Regular:size=9;1
-font-1 = Material Icons:style=Regular:fontformat=truetype:size=11.5;1
-font-2 = Material Icons:style=Regular:size=11.5;1
-font-3 = FontAwesome:style=Regular:size=10;1
+;font-0 = Iosevka Medium:style=Medium:size=9;1
+;font-1 = Material Icons:style=Regular:fontformat=truetype:size=11.5;1
+;font-2 = Material Icons:style=Regular:size=11.5;1
+;font-3 = FontAwesome:style=Regular:size=10;1
 
-;modules-left = mpd
-modules-left = date
-;modules-center = date
-modules-center = mpd
-modules-right = pulseaudio network battery
+;;modules-left = mpd
+;;modules-center = date
+;modules-right = 
 
-tray-position = left
-tray-padding = 2
-tray-background = ${self.background}
-tray-detached = true
+;tray-position = left
+;tray-padding = 2
+;tray-background = ${self.background}
+;tray-detached = true
 
-;override-redirect = true
-;wm-restack = bspwm
+;;override-redirect = true
+;;wm-restack = bspwm
 
-;scroll-up = bspwm-desknext
-;scroll-down = bspwm-deskprev
+;;scroll-up = bspwm-desknext
+;;scroll-down = bspwm-deskprev
 
-;scroll-up = i3wm-wsnext
-;scroll-down = i3wm-wsprev cursor-click = pointer
-cursor-scroll = ns-resize
+;;scroll-up = i3wm-wsnext
+;;scroll-down = i3wm-wsprev cursor-click = pointer
+;cursor-scroll = ns-resize
 
 [bar/bottombar]
 monitor = ${env:MONITOR:Virtual-1}
@@ -103,18 +101,20 @@ border-color = #00000000
 padding-left = 5
 padding-right = 5
 
-module-margin-left = 2
-module-margin-right = 2
+module-margin-left = 1
+module-margin-right = 1
 
-font-0 = Iosevka Regular:style=Regular:size=9;1
+font-0 = Iosevka Medium:style=Medium:size=9;1
 font-1 = Material Icons:style=Regular:fontformat=truetype:size=11.5;1
 font-2 = Material Icons:style=Regular:size=11.5;1
 font-3 = FontAwesome:style=Regular:size=10;1
 
+modules-left = i3 cpu memory
 ;modules-left = weather
-modules-center = i3
-;modules-right = temperature cpu memory
-modules-right = cpu memory
+; modules-center = 
+modules-center = mpd
+; TODO: modules-right = temperature cpu memory
+modules-right = pulseaudio network battery date
 
 tray-position = left
 ;tray-padding = 2
@@ -249,8 +249,8 @@ label-disconnected = 
 type = internal/date
 interval = 1
 
-date = %a, %e %b %Y
-date-alt = " %Y-%m-%d"
+date = "%Y/%m/%d"
+date-alt = %a, %e %b %Y
 
 time = %H:%M
 time-alt = %H:%M:%S
@@ -273,8 +273,8 @@ label-muted = 
 ramp-volume-0 = 
 ramp-volume-1 = 
 ramp-volume-2 = 
-ramp-volume-foreground = ${bar/topbar.foreground}
-label-muted-foreground = ${bar/topbar.foreground}
+ramp-volume-foreground = ${bar/bottombar.foreground}
+label-muted-foreground = ${bar/bottombar.foreground}
 
 [module/alsa]
 type = internal/alsa
@@ -315,22 +315,22 @@ format-discharging = <animation-discharging> <label-discharging>
 format-full = <label-full>
 
 label-charging = %percentage%
-label-charging-foreground = ${bar/topbar.foreground}
+label-charging-foreground = ${bar/bottombar.foreground}
 label-discharging = %percentage%
-label-discharging-foreground = ${bar/topbar.foreground}
+label-discharging-foreground = ${bar/bottombar.foreground}
 label-full =  %percentage%%
-label-full-foreground = ${bar/topbar.foreground}
+label-full-foreground = ${bar/bottombar.foreground}
 
 animation-charging-0 = 
 animation-charging-1 = 
 animation-charging-2 = 
-animation-charging-foreground = ${bar/topbar.foreground}
+animation-charging-foreground = ${bar/bottombar.foreground}
 animation-charging-framerate = 750
 
 animation-discharging-0 = 
 animation-discharging-1 = 
 animation-discharging-2 = 
-animation-discharging-foreground = ${bar/topbar.foreground}
+animation-discharging-foreground = ${bar/bottombar.foreground}
 animation-discharging-framerate = 750
 
 [module/temperature]
