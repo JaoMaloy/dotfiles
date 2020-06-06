@@ -249,7 +249,7 @@ label-disconnected = 
 type = internal/date
 interval = 1
 
-date = "%Y/%m/%d"
+date = "%m.%d.%Y"
 date-alt = %a, %e %b %Y
 
 time = %H:%M
