@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="/home/jaomaloy/.oh-my-zsh"
@@ -8,7 +8,7 @@ export ZSH="/home/jaomaloy/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="avit"
+ZSH_THEME="minimal"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -96,4 +96,10 @@ source $ZSH/oh-my-zsh.sh
 #
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+# alias ohmyzsh="mate ~/.oh-my-zsh
+alias super-pacman-install="pacman -Slq | fzf -m --preview 'cat <(pacman -Si) {1} <(pacman -F1 {1} | awk "{print \$2}")' | xargs -ro sudo pacman -S"
+alias super-yay-install="yay -Slq | fzf -m --preview 'cat <(yay -Si {1}) <(yay -F1 {1} | awk "{print \$2}")' | xargs -ro yay -S"
+
+source /usr/share/fzf/completion.zsh
+source /usr/share/fzf/key-bindings.zsh
+export PATH=$PATH:/sbin
