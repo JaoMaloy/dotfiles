@@ -81,7 +81,7 @@ margin-bottom = 5
 ;cursor-scroll = ns-resize
 
 [bar/bottombar]
-monitor = ${env:MONITOR:Virtual-1}
+monitor = ${env:MONITOR:eDP-1}
 width = 100%
 height = 20
 offset-x = 0
@@ -98,8 +98,8 @@ line-size = 0
 border-size = 0
 border-color = #00000000
 
-padding-left = 5
-padding-right = 5
+padding-left = 7
+padding-right = 7
 
 module-margin-left = 1
 module-margin-right = 1
@@ -109,11 +109,10 @@ font-1 = Material Icons:style=Regular:fontformat=truetype:size=11.5;1
 font-2 = Material Icons:style=Regular:size=11.5;1
 font-3 = FontAwesome:style=Regular:size=10;1
 
-modules-left = i3 cpu memory
+modules-left = i3 cpu memory temperature
 ;modules-left = weather
 ; modules-center = 
 modules-center = mpd
-; TODO: modules-right = temperature cpu memory
 modules-right = pulseaudio network battery date
 
 tray-position = left
@@ -232,7 +231,7 @@ label = %percentage_used:3%%
 
 [module/network]
 type = internal/network
-interface = enp0s3
+interface = wlp3s0
 interval = 3.0
 
 ;format-connected-underline = #55aa55
@@ -306,7 +305,7 @@ bar-volume-empty-foreground = ${colors.foreground-alt}
 
 [module/battery]
 type = internal/battery
-battery = BAT0
+battery = BAT1
 adapter = AC
 full-at = 98
 
@@ -336,18 +335,19 @@ animation-discharging-framerate = 750
 [module/temperature]
 type = internal/temperature
 thermal-zone = 0
+base-temperature = 30
 warn-temperature = 70
 
-format = <label>
-;format-underline = #f50a4d
+format = <ramp> <label>
 format-warn = <ramp> <label-warn>
-;format-warn-underline = ${self.format-underline}
 
 label = %temperature-c%
 label-warn = %temperature-c%
 label-warn-foreground = ${bar/bottombar.foreground}
 
-ramp-2 = ""
+ramp-0 = ""
+ramp-1 = ""
+ramp-2 = ""
 ramp-font = 3
 ramp-foreground = ${bar/bottombar.foreground}
 
