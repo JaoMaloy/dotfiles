@@ -58,7 +58,7 @@ ZSH_THEME="minimal"
 # "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
 # or set a custom format using the strftime function format specifications,
 # see 'man strftime' for details.
-# HIST_STAMPS="mm/dd/yyyy"
+HIST_STAMPS="mm/dd/yyyy"
 
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
@@ -99,6 +99,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh
 alias super-pacman-install="pacman -Slq | fzf -m --preview 'cat <(pacman -Si) {1} <(pacman -F1 {1} | awk "{print \$2}")' | xargs -ro sudo pacman -S"
 alias super-yay-install="yay -Slq | fzf -m --preview 'cat <(yay -Si {1}) <(yay -F1 {1} | awk "{print \$2}")' | xargs -ro yay -S"
+alias tmux-start='tmux start-server; tmux attach'
 
 source /usr/share/fzf/completion.zsh
 source /usr/share/fzf/key-bindings.zsh
