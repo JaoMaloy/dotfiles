@@ -6,7 +6,7 @@ $HOME/.config/polybar/launch.sh &
 
 bspc monitor eDP-1 -d 1 2 3
 bspc monitor DP-1 -d 4 5 6
-# bspc monitor HDMI-1 VII VIII IX
+# bspc monitor HDMI-1 -d 7 8 9
 
 bspc config border_width                  0
 bspc config window_gap                    8
@@ -40,3 +40,5 @@ bspc config pointer_action3 resize_corner
 # bspc rule -a mplayer2 state=floating
 # bspc rule -a Kupfer.py focus=on
 # bspc rule -a Screenkey manage=off
+bspc rule -a firefoxdeveloperedition desktop='^4' follow=on
+bspc rule -a mpv desktop='^5' state=fullscreen follow=on
