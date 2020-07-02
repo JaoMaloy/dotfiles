@@ -28,6 +28,7 @@ bspc config pointer_modifier mod4
 bspc config pointer_action1 move
 bspc config pointer_action2 resize_side
 bspc config pointer_action3 resize_corner
+bspc config bottom_monocle_padding 8
 
 #polybar hidden when fullscreen for vlc, youtube, mpv ...
 #find out the name of your monitor with xrandr
@@ -42,3 +43,4 @@ bspc config pointer_action3 resize_corner
 # bspc rule -a Screenkey manage=off
 bspc rule -a firefoxdeveloperedition desktop='^4' follow=on
 bspc rule -a mpv desktop='^5' state=fullscreen follow=on
+bspc rule -a St:explorer state=floating follow=on

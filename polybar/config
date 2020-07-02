@@ -29,8 +29,8 @@ secondary = #e60053
 alert = #bd2c40
 
 [global/wm]
-margin-top = 5
-margin-bottom = 5
+; margin-top = 5
+; margin-bottom = 5
 
 ;[bar/topbar]
 ;monitor = ${env:MONITOR:Virtual-1}
