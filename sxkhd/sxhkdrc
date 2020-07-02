@@ -10,6 +10,11 @@ super + Return
 super + @space
     rofi -show run -lines 3 -eh 2 -width 1800 -padding 700 -hide-scrollbar -config /home/jaomaloy/.config/rofi/config.rasi
 
+# file explorer
+super + e
+    st -n explorer -g 150x40 -e nnn
+
+# browser
 super + w
     firefox-developer-edition
 
