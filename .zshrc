@@ -1,5 +1,7 @@
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$PATH:/sbin
+export EDITOR='nvim'
 
 # Path to your oh-my-zsh installation.
 export ZSH="/home/jaomaloy/.oh-my-zsh"
@@ -89,6 +91,10 @@ source $ZSH/oh-my-zsh.sh
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
+# NNN Configuration
+# NNN_BMS=''
+export NNN_FIFO='/tmp/nnn.fifo'
+export NNN_PLUG='p:preview-tui;d:nmount;i:imgview;c:fzcd;z:fzz;m:mimelist;n:bulknew;f:finder'
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
@@ -97,10 +103,10 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh
-alias super-pacman-install="pacman -Slq | fzf -m --preview 'cat <(pacman -Si) {1} <(pacman -F1 {1} | awk "{print \$2}")' | xargs -ro sudo pacman -S"
-alias super-yay-install="yay -Slq | fzf -m --preview 'cat <(yay -Si {1}) <(yay -F1 {1} | awk "{print \$2}")' | xargs -ro yay -S"
-alias tmux-start='tmux start-server; tmux attach'
+alias cp='/usr/local/bin/cpg -g'
+alias mv='/usr/local/bin/mvg -g'
+# alias pacman-fzf='pacman -Slq | fzf --multi --preview 'cat <(pacman -Si {1}) <(pacman -Fl {1} | awk "{print \$2}")' | xargs -ro sudo pacman -S'
+# alias yay-fzf='yay -Slq | fzf --multi --preview 'cat <(yay -Si {1}) <(yay -Fl {1} | awk "{print \$2}")' | xargs -ro sudo yay -S'
 
 source /usr/share/fzf/completion.zsh
 source /usr/share/fzf/key-bindings.zsh
-export PATH=$PATH:/sbin
