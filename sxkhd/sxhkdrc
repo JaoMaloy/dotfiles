@@ -31,7 +31,7 @@ super + shift + {x,r}
     bspc {quit,wm -r}
 
 # close and kill
-super + {_,shift + }q
+super + shift + {_,ctrl + }q
     bspc node -{c,k}
 
 # alternate between the tiled and monocle layout
@@ -67,12 +67,12 @@ super + {_,shift + }{h,j,k,l}
     bspc node -{f,s} {west,south,north,east}
 
 # focus the node for the given path jump
-super + {p,b,comma,period}
-	bspc node -f @{parent,brother,first,second}
+super + {p,v,comma,period}
+    bspc node -f @{parent,brother,first,second}
 
 # focus the next/previous node in the current desktop
-super + {_,shift + }c
-	bspc node -f {next,prev}.local
+super + {n, b}
+    bspc node -f {next,prev}.local
 
 # focus the next/previous desktop in the current monitor
 super + bracket{left,right}
