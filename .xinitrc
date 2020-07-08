@@ -32,9 +32,10 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
  unset f
 fi
 
+udiskie &
 xrandr --output DP-1 --auto &
 xsetroot -cursor_name left_ptr
 # wal -n -i "wallpaper/spiderman.png" &
 # feh --bg-scale "$(< "${HOME}/.cache/wal/wal")" &
-feh --bg-scale '~/Data/Wallpapers/spiderman.png' &
+feh --bg-scale $HOME/Data/Wallpapers/spiderman.png &
 exec bspwm
