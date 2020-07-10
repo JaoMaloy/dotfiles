@@ -23,6 +23,38 @@ super + Escape
     pkill -USR1 -x sxhkd
 
 #
+#  media controls
+#
+
+# change volume percentage
+XF86AudioRaiseVolume
+    sh -c "pactl set-sink-mute 0 false ; pactl set-sink-volume 0 +5%"
+
+XF86AudioLowerVolume
+    sh -c "pactl set-sink-mute 0 false ; pactl set-sink-volume 0 -5%"
+
+# toggle mute
+XF86AudioMute
+    pactl set-sink-mute 0 toggle
+
+XF86MonBrightnessUp
+    light -A 10
+
+XF86MonBrightnessDown
+    light -U 10
+
+# toggle microphone
+super + ctrl + alt + shift + m
+    pactl set-source-mute 1 toggle; notify-send "Microphone Toggled"
+
+# screenshots
+super + shift + s
+    sleep 1 && scrot --select -e 'mv $f ~/Pictures/screenshots/'
+
+Print
+    scrot -e 'mv $f ~/Pictures/screenshots/'
+
+#
 # bspwm hotkeys
 #
 
@@ -128,18 +160,3 @@ super + alt + shift + {h,j,k,l}
 super + {Left,Down,Up,Right}
     bspc node -v {-20 0,0 20,0 -20,20 0}
 
-#
-#  hardware control
-#
-
-# change volume percentage
-super + ctrl + alt + {Down,Up}
-    sh -c "pactl set-sink-mute 0 false ; pactl set-sink-volume 0 {-5%, +5%}"
-
-# toggle mute
-super + ctrl + alt + m
-    pactl set-sink-mute 0 toggle
-
-# toggle microphone
-supel + ctrl + alt + shift + m
-    pactl set-source-mute 1 toggle
