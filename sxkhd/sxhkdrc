@@ -19,8 +19,12 @@ super + w
     firefox-developer-edition
 
 # make sxhkd reload its configuration files:
+super + ctrl + r
+    pkill -USR1 -x sxhkd; notify-send "Sxhkd refreshed!"
+
+# Power menu
 super + Escape
-    pkill -USR1 -x sxhkd
+    $HOME/.config/rofi/scripts/./menu_powermenu.sh
 
 #
 #  media controls
