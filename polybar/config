@@ -349,16 +349,9 @@ format-background = ${bar/bottombar.background}
 
 [module/mpd]
 type = internal/mpd
-format-online = <label-song>  <icon-prev> <icon-stop> <toggle> <icon-next>
+format-online = <label-song>
 
-icon-prev = 
-icon-stop = 
-icon-play = 
-icon-pause = 
-icon-next = 
-
-label-song-maxlen = 25
-label-song-ellipsis = true
+label-song =  %artist% - %title%
 
 [module/xbacklight]
 type = internal/xbacklight

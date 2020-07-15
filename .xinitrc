@@ -35,7 +35,8 @@ fi
 udiskie &
 xss-lock -l -- multilockscreen --lock blur &
 xrandr --output DP-1 --auto &
-xsetroot -cursor_name left_ptr
+xsetroot -cursor_name left_ptr &
+mopidy &
 # wal -n -i "wallpaper/spiderman.png" &
 # feh --bg-scale "$(< "${HOME}/.cache/wal/wal")" &
 feh --bg-scale $HOME/Data/Wallpapers/spiderman.png &
