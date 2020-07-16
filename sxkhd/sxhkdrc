@@ -6,10 +6,6 @@
 super + Return
     st
 
-# program launcher
-super + @space
-    rofi -show run -lines 3 -eh 2 -width 1800 -padding 700 -hide-scrollbar -config /home/jaomaloy/.config/rofi/config.rasi
-
 # file explorer
 super + e
     st -n explorer -g 150x40 -e nnn
@@ -20,6 +16,14 @@ super + w
 
 super + shift + m
     st -e ncmpcpp
+
+# rofi program launcher
+super + @space
+    rofi -show run
+
+# rofi scripts {bitwarden (password manager), calculator(rofi-calc), rofi-bluetooth, xrandrmenu}
+super + shift + {b, equal, c, d, n}
+    {bwmenu --auto-lock 600, rofi -show calc -modi calc -no-show-match -no-sort, rofi-bluetooth, xrandrmenu, /home/jaomaloy/.config/rofi/scripts/./menu_network.sh}
 
 # make sxhkd reload its configuration files:
 super + ctrl + r

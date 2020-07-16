@@ -1,8 +1,5 @@
 ## Idea Dump
 
-- [AwesomeWM] Floppier
-    > [Reddit](https://www.reddit.com/r/unixporn/comments/fhd70d/awesomewm_floppier/)
-    > ![Photo](http://i.redd.it/5mjm5s90e7m41.png)
 - [AwesomeWM] Mechanical Love
     > [Reddit](https://www.reddit.com/r/unixporn/comments/a900p7/awesome_mechanical_love/)
     > ![Mechanical Love](https://i.redd.it/glzrkk83f4621.png)
@@ -70,12 +67,16 @@
     > ### XFWM4
 - Arch Tips
     > [Tips for Beginners - Reddit](https://www.reddit.com/r/archlinux/comments/b3vy5p/tips_for_a_firsttimer_on_arch_linux/)
+- [AwesomeWM] Floppier
+    > [Reddit](https://www.reddit.com/r/unixporn/comments/fhd70d/awesomewm_floppier/)
+    > ![Photo](http://i.redd.it/5mjm5s90e7m41.png)
 
 ## Research
 
 - Quickfix List
     > [Quickfix reflector](https://github.com/stefandtw/quickfix-reflector.vim)
     * [ ] Research Quickfix mechanism
+- nvidia-modprobe
 - Radical
 - Closetag
     > [Git](https://github.com/alvan/vim-closetag)
@@ -88,14 +89,6 @@
 - Which-key
 - Neomake
 - Vim-snippets
-- Laptop General Recommendations
-    * [ ] Disable clearing of boot messages
-    * [x] cpupower - default config
-    * [ ] thermald
-    * [ ] TLP
-    * [ ] i7z
-    * [ ] ACPI
-    * [ ] [Time Synchronization](https://wiki.archlinux.org/index.php/System_time#Time_synchronization)
 - [Polybar] Pulse audio volume max is 153%
 - Emmet
 - Codi
@@ -104,14 +97,17 @@
     > [Git](https://github.com/pseewald/vim-anyfold)
     * [ ] Research
     * [ ] Documentation/Wiki Entry
-- Dunst
-- Screenshot capability
+- Laptop General Recommendations
+    * [ ] Disable clearing of boot messages
+    * [x] cpupower - default config
+    * [ ] thermald
+    * [ ] TLP
+    * [ ] i7z
+    * [ ] ACPI
+    * [ ] [Time Synchronization](https://wiki.archlinux.org/index.php/System_time#Time_synchronization)
 
 ## To Do
 
-- Mpv for media playing
-    * [x] Download
-    * [ ] Config file
 - Zathura for PDF, PS, Dejavu support
     > [Wiki](https://wiki.archlinux.org/index.php/Zathura)
     * [x] Download
@@ -120,16 +116,15 @@
 
 ## Doing
 
-- Firefox tridactyl
-- Rofi
-    > [Github](https://github.com/davatorium/rofi)
-    > [Theme Examples](https://www.reddit.com/r/unixporn/comments/fsx8bo/oc_rofi_new_applications_launchers_for_rofi/)
-    > [More Examples](https://www.reddit.com/r/unixporn/comments/cvqc6s/oc_handy_menus_made_with_rofi/)
-    * [x] Installation
-    * [x] Configuration
-    * [x] Testing
-    * [ ] Styling
-    * [ ] Useful Scripts
+- Mpv for media playing
+    * [x] Download
+    * [ ] Config file
+- Dunst
+    > Good looking notifications
+    * [x] Install
+    * [ ] Configure
+    * [ ] Theme
+    * [ ] Testing
 
 ## Done
 
@@ -263,6 +258,28 @@
     * [x] nnn useful plugins
 - Uninstall i3
 - Change cursor pointer
+- FN and other media keyboard support
+- Screenshot capability
+- MPD/nmcpcpp
+    * [x] Configuration
+    * [x] Spotify
+    * [x] Colors
+- Rofi
+    > [Github](https://github.com/davatorium/rofi)
+    > [Theme Examples](https://www.reddit.com/r/unixporn/comments/fsx8bo/oc_rofi_new_applications_launchers_for_rofi/)
+    > [More Examples](https://www.reddit.com/r/unixporn/comments/cvqc6s/oc_handy_menus_made_with_rofi/)
+    * [x] Installation
+    * [x] Configuration
+    * [x] Testing
+    * [x] Styling
+    * [x] Script: Bitwarden
+    * [x] Script: Screenshot using scrot(or maim)
+    * [x] Script: Monitor Layout
+    * [x] Script: udisk
+    * [x] Script: Bluetooth
+    * [x] Script: qalculation
+    * [x] Script: Power Menu
+    * [x] Arrange
 
 ## On Hold
 
@@ -382,3 +399,5 @@
     * [x] Icons
     * [x] Font
     * [x] Data
+- Firefox tridactyl
+    > ON HOLD, DOESNT INSTALL, Using vim-vixen instead
