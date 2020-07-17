@@ -105,25 +105,22 @@
     * [ ] i7z
     * [x] ACPI
     * [x] [Time Synchronization](https://wiki.archlinux.org/index.php/System_time#Time_synchronization)
+
+## To Do
+
 - Qutebrowser
     * [x] Install
     * [ ] Privacy Configuration
     * [ ] Theme
     * [ ] Hotkeys
 
-## To Do
+## Doing
 
 - Zathura for PDF, PS, Dejavu support
     > [Wiki](https://wiki.archlinux.org/index.php/Zathura)
     * [x] Download
     * [ ] Test
     * [ ] Config
-
-## Doing
-
-- Mpv for media playing
-    * [x] Download
-    * [ ] Config file
 
 ## Done
 
@@ -285,6 +282,11 @@
     * [x] Configure
     * [x] Theme
     * [x] Testing
+- Mpv for media playing
+    * [x] Download
+    * [x] Config file
+    * [x] Keybindings
+    * [x] Userscripts
 
 ## On Hold
 
