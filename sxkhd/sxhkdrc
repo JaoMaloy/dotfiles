@@ -52,10 +52,10 @@ XF86AudioMute
     pactl set-sink-mute 0 toggle
 
 XF86MonBrightnessUp
-    light -A 10
+    sudo light -A 10
 
 XF86MonBrightnessDown
-    light -U 10
+    sudo light -U 10
 
 # toggle microphone
 super + ctrl + alt + shift + m
