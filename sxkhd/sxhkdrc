@@ -62,7 +62,7 @@ super + ctrl + alt + shift + m
     pactl set-source-mute 1 toggle; notify-send "Microphone Toggled"
 
 # screenshots
-super + shift + s
+super + shift + Print
     sleep 1 && scrot --select -e 'mv $f ~/Pictures/screenshots/'
 
 Print
