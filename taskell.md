@@ -103,8 +103,13 @@
     * [ ] thermald
     * [ ] TLP
     * [ ] i7z
-    * [ ] ACPI
-    * [ ] [Time Synchronization](https://wiki.archlinux.org/index.php/System_time#Time_synchronization)
+    * [x] ACPI
+    * [x] [Time Synchronization](https://wiki.archlinux.org/index.php/System_time#Time_synchronization)
+- Qutebrowser
+    * [x] Install
+    * [ ] Privacy Configuration
+    * [ ] Theme
+    * [ ] Hotkeys
 
 ## To Do
 
@@ -119,12 +124,6 @@
 - Mpv for media playing
     * [x] Download
     * [ ] Config file
-- Dunst
-    > Good looking notifications
-    * [x] Install
-    * [ ] Configure
-    * [ ] Theme
-    * [ ] Testing
 
 ## Done
 
@@ -280,6 +279,12 @@
     * [x] Script: qalculation
     * [x] Script: Power Menu
     * [x] Arrange
+- Dunst
+    > Good looking notifications
+    * [x] Install
+    * [x] Configure
+    * [x] Theme
+    * [x] Testing
 
 ## On Hold
 
