@@ -30,17 +30,6 @@ bspc config pointer_action2 resize_side
 bspc config pointer_action3 resize_corner
 bspc config bottom_monocle_padding 8
 
-#polybar hidden when fullscreen for vlc, youtube, mpv ...
-#find out the name of your monitor with xrandr
-#xdo below -t $(xdo id -n root) $(xdo id -a polybar-main_DisplayPort-0)
-#xdo below -t $(xdo id -n root) $(xdo id -a polybar-main_DisplayPort-1)
-#xdo below -t $(xdo id -n root) $(xdo id -a polybar-main_HDMI-A-0)
-
-# bspc rule -a Gimp desktop='^8' state=floating follow=on
-# bspc rule -a Chromium desktop='^2'
-# bspc rule -a mplayer2 state=floating
-# bspc rule -a Kupfer.py focus=on
-# bspc rule -a Screenkey manage=off
 bspc rule -a firefoxdeveloperedition desktop='^4' follow=on
 bspc rule -a mpv desktop='^5' state=fullscreen follow=on
 bspc rule -a St:explorer state=floating follow=on
