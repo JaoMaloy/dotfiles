@@ -92,7 +92,6 @@
 - [Polybar] Pulse audio volume max is 153%
 - Emmet
 - Codi
-- vim-wiki
 - Any-fold
     > [Git](https://github.com/pseewald/vim-anyfold)
     * [ ] Research
@@ -105,22 +104,18 @@
     * [ ] i7z
     * [x] ACPI
     * [x] [Time Synchronization](https://wiki.archlinux.org/index.php/System_time#Time_synchronization)
+- vim-wiki
 
 ## To Do
 
-- Qutebrowser
-    * [x] Install
-    * [ ] Privacy Configuration
-    * [ ] Theme
-    * [ ] Hotkeys
 
 ## Doing
 
-- Zathura for PDF, PS, Dejavu support
-    > [Wiki](https://wiki.archlinux.org/index.php/Zathura)
-    * [x] Download
-    * [ ] Test
-    * [ ] Config
+- Qutebrowser
+    * [x] Install
+    * [ ] Hotkeys
+    * [ ] Theme
+    * [ ] Privacy Configuration
 
 ## Done
 
@@ -287,6 +282,14 @@
     * [x] Config file
     * [x] Keybindings
     * [x] Userscripts
+- Zathura for PDF, PS, Dejavu support
+    > [Wiki](https://wiki.archlinux.org/index.php/Zathura)
+    * [x] Download
+    * [x] Test
+    * [x] Config (research usability, improve base)
+    * [x] Theme
+    * [x] Bspwm Rule
+    * [x] Compton
 
 ## On Hold
 

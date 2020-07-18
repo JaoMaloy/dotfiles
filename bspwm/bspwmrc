@@ -44,3 +44,4 @@ bspc config bottom_monocle_padding 8
 bspc rule -a firefoxdeveloperedition desktop='^4' follow=on
 bspc rule -a mpv desktop='^5' state=fullscreen follow=on
 bspc rule -a St:explorer state=floating follow=on
+bspc rule -a Zathura state=tiled follow=on focus=on
