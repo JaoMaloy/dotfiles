@@ -87,8 +87,6 @@
 - VISTA!
     > https://github.com/liuchengxu/vista.vim
 - Which-key
-- Neomake
-- Vim-snippets
 - [Polybar] Pulse audio volume max is 153%
 - Emmet
 - Codi
@@ -104,18 +102,15 @@
     * [ ] i7z
     * [x] ACPI
     * [x] [Time Synchronization](https://wiki.archlinux.org/index.php/System_time#Time_synchronization)
-- vim-wiki
 
 ## To Do
 
+- Vim-snippets
+- Neomake
 
 ## Doing
 
-- Qutebrowser
-    * [x] Install
-    * [ ] Hotkeys
-    * [ ] Theme
-    * [ ] Privacy Configuration
+- vim-wiki
 
 ## Done
 
@@ -290,6 +285,13 @@
     * [x] Theme
     * [x] Bspwm Rule
     * [x] Compton
+- Qutebrowser
+    * [x] Install
+    * [x] Hotkeys
+    * [x] Theme
+    * [x] Privacy Configuration (so far)
+    * [x] Userscript (bitwarden)
+    * [x] Userscript (taskwarrior)
 
 ## On Hold
 
