@@ -111,6 +111,9 @@
 ## Doing
 
 - vim-wiki
+    * [x] Configuration (General)
+    * [ ] Configuration (Directories)
+    * [ ] Hotkeys
 
 ## Done
 
