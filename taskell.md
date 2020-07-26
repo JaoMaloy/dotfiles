@@ -105,15 +105,11 @@
 
 ## To Do
 
-- Vim-snippets
 - Neomake
 
 ## Doing
 
-- vim-wiki
-    * [x] Configuration (General)
-    * [ ] Configuration (Directories)
-    * [ ] Hotkeys
+- Vim-snippets
 
 ## Done
 
@@ -295,6 +291,10 @@
     * [x] Privacy Configuration (so far)
     * [x] Userscript (bitwarden)
     * [x] Userscript (taskwarrior)
+- vim-wiki
+    * [x] Configuration (General)
+    * [x] Configuration (Directories)
+    * [x] Hotkeys
 
 ## On Hold
 
