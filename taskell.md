@@ -109,7 +109,6 @@
 
 ## Doing
 
-- Vim-snippets
 
 ## Done
 
@@ -295,6 +294,7 @@
     * [x] Configuration (General)
     * [x] Configuration (Directories)
     * [x] Hotkeys
+- Vim-snippets
 
 ## On Hold
 
