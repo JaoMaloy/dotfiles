@@ -112,7 +112,7 @@ font-3 = FontAwesome:style=Regular:size=10;1
 modules-left = bspwm cpu memory temperature
 ;modules-left = weather
 modules-center = mpd
-modules-right = pulseaudio network battery date
+modules-right = backlight-acpi pulseaudio network battery date
 
 tray-position = left
 ;tray-padding = 2
@@ -356,19 +356,12 @@ label-song =  %artist% - %title%
 [module/xbacklight]
 type = internal/xbacklight
 
-format = <label> <bar>
-label = BL
+format = <ramp> <label>
+label = %percentage%%
 
-bar-width = 10
-bar-indicator = |
-bar-indicator-foreground = #fff
-bar-indicator-font = 2
-bar-fill = ─
-bar-fill-font = 2
-bar-fill-foreground = #9f78e1
-bar-empty = ─
-bar-empty-font = 2
-bar-empty-foreground = ${colors.foreground-alt}
+ramp-0 = 
+ramp-1 = 
+ramp-2 = 
 
 [module/backlight-acpi]
 inherit = module/xbacklight
