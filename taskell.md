@@ -88,27 +88,33 @@
     > https://github.com/liuchengxu/vista.vim
 - Which-key
 - [Polybar] Pulse audio volume max is 153%
-- Emmet
 - Codi
 - Any-fold
     > [Git](https://github.com/pseewald/vim-anyfold)
     * [ ] Research
     * [ ] Documentation/Wiki Entry
-- Laptop General Recommendations
-    * [ ] Disable clearing of boot messages
-    * [x] cpupower - default config
-    * [ ] thermald
-    * [ ] TLP
-    * [ ] i7z
-    * [x] ACPI
-    * [x] [Time Synchronization](https://wiki.archlinux.org/index.php/System_time#Time_synchronization)
 
 ## To Do
 
 - Neomake
+- Laptop General Recommendations
+    * [ ] Disable clearing of boot messages
+    * [x] cpupower - default config
+    * [x] thermald
+    * [ ] TLP
+    * [x] i7z
+    * [x] ACPI
+    * [x] [Time Synchronization](https://wiki.archlinux.org/index.php/System_time#Time_synchronization)
 
 ## Doing
 
+- Tranmission-remote
+- Neomutt
+    * [x] Installation
+    * [ ] Configuration
+    * [ ] Emails
+    * [ ] Testing
+- Weechat
 
 ## Done
 
@@ -295,6 +301,11 @@
     * [x] Configuration (Directories)
     * [x] Hotkeys
 - Vim-snippets
+- Emmet
+- Newsboat
+    * [x] Installation
+    * [x] Configuration
+    * [x] Basic URLS
 
 ## On Hold
 
