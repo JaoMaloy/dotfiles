@@ -21,12 +21,18 @@ super + w
 super + shift + m
     st -e ncmpcpp
 
+super + shift + n
+    st -e newsboat
+
+super + shift + c
+    st -e weechat
+
 # rofi program launcher
 super + @space
     rofi -show run
 
 # rofi scripts {bitwarden (password manager), calculator(rofi-calc), rofi-bluetooth, xrandrmenu}
-super + shift + {b, equal, c, d, n}
+super + shift + {b, equal, F2, F5, F3}
     {bwmenu --auto-lock 600, rofi -show calc -modi calc -no-show-match -no-sort, rofi-bluetooth, xrandrmenu, /home/jaomaloy/.config/rofi/scripts/./menu_network.sh}
 
 # make sxhkd reload its configuration files:
