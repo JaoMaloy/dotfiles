@@ -108,8 +108,7 @@ alias n3='nnn -d -r'
 # alias ohmyzsh="mate ~/.oh-my-zsh
 alias cp='/usr/local/bin/cpg -g'
 alias mv='/usr/local/bin/mvg -g'
-# alias pacman-fzf='pacman -Slq | fzf --multi --preview 'cat <(pacman -Si {1}) <(pacman -Fl {1} | awk "{print \$2}")' | xargs -ro sudo pacman -S'
-# alias yay-fzf='yay -Slq | fzf --multi --preview 'cat <(yay -Si {1}) <(yay -Fl {1} | awk "{print \$2}")' | xargs -ro sudo yay -S'
+alias pfzf="pacman -Qq | fzf --preview 'pacman -Qil {}' --layout=reverse --bind 'enter:execute(pacman -Qil {} | less)'"
 
 source /usr/share/fzf/completion.zsh
 source /usr/share/fzf/key-bindings.zsh
