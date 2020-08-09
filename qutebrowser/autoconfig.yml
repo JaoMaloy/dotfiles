@@ -37,6 +37,7 @@ settings:
   content.canvas_reading:
     global: false
   content.cookies.accept:
+    '*://*.www.netflix.com/*': all
     global: never
   content.geolocation:
     global: false
@@ -49,6 +50,7 @@ settings:
     global: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko)
       Chrome/83.0.4103.61 Safari/537.36
   content.javascript.enabled:
+    '*://*.www.netflix.com/*': true
     global: false
   content.webgl:
     global: false
