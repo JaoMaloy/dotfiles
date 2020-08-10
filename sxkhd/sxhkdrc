@@ -47,8 +47,8 @@ super + Escape
 #  media controls
 #
 
-super + shift + {comma, period, p, s}
-    mpc {prev, next, toggle, stop}
+super + {shift + comma, shift + period, shift + slash, slash}
+    mpc {prev, next, stop, toggle}
 
 # change volume percentage
 XF86AudioRaiseVolume
