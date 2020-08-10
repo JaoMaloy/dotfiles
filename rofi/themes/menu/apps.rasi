@@ -1,0 +1,103 @@
+/*
+ *
+ * Author : Aditya Shakya (adi1090x)
+ * Mail : adi1090x@gmail.com
+ * Github : @adi1090x
+ * Reddit : @adi1090x
+ *
+ */
+
+configuration {
+    location: 0;
+    yoffset: 0;
+    xoffset: 0;
+    fake-transparency: false;
+    hide-scrollbar: true;
+    bw: 0;
+    fullscreen: false;
+    sidebar-mode: false;
+}
+
+/* colors */
+* {
+red: #EC5250;
+blue: #25B1CA;
+green: #2ABB9C;
+purple: #5537D2;
+}
+
+// black
+* {
+bg: #000000cc;
+bg-sel: #00000066;
+fg: #ffffff;
+}
+
+// white
+/*
+* {
+bg: #ffffffa6;
+bg-sel: #ffffff8c;
+fg: #ffffff;
+}
+*/
+
+* {
+  background-color: #00000000;
+  font: "Iosevka 12";
+}
+
+window {
+  height: 45%;
+  width: 20%;
+  transparency: "real";
+}
+
+mainbox {
+  children: [ inputbar, listview ];
+  padding: 0% 0% 0% 0%;
+  background-color: @bg;
+  border: 0;
+  border-radius: 5;
+  border-color: @bg;
+}
+
+listview {
+  columns: 1;
+  padding: 5;
+  spacing: 5;
+}
+
+element {
+  border: 0;
+  text-color: @fg;
+  orientation: vertical;
+  padding: 12 0 12 0;
+  border-radius: 5;
+  highlight: none;
+}
+
+element selected {
+  background-color: @bg-sel;
+  border-color: @bg;
+  text-color: @fg;
+}
+
+inputbar {
+  children: [entry];
+  padding: 4 4 4 4;
+  /* change this colors to change inputbar color*/
+  background-color: @bg;
+  border: 0 0 1 0;
+  border-color: @blue;
+}
+
+prompt {
+  enabled: false;
+}
+
+entry {
+  font: "Iosevka 12";
+  text-color: @fg;
+  padding: 8 12 8 12;
+}

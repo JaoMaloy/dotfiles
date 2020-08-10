@@ -73,6 +73,14 @@
 
 ## Research
 
+- Laptop General Recommendations
+    * [ ] Disable clearing of boot messages
+    * [x] cpupower - default config
+    * [x] thermald
+    * [ ] TLP
+    * [x] i7z
+    * [x] ACPI
+    * [x] [Time Synchronization](https://wiki.archlinux.org/index.php/System_time#Time_synchronization)
 - Quickfix List
     > [Quickfix reflector](https://github.com/stefandtw/quickfix-reflector.vim)
     * [ ] Research Quickfix mechanism
@@ -93,28 +101,25 @@
     > [Git](https://github.com/pseewald/vim-anyfold)
     * [ ] Research
     * [ ] Documentation/Wiki Entry
-
-## To Do
-
 - Neomake
-- Laptop General Recommendations
-    * [ ] Disable clearing of boot messages
-    * [x] cpupower - default config
-    * [x] thermald
-    * [ ] TLP
-    * [x] i7z
-    * [x] ACPI
-    * [x] [Time Synchronization](https://wiki.archlinux.org/index.php/System_time#Time_synchronization)
-
-## Doing
-
-- Tranmission-remote
 - Neomutt
     * [x] Installation
     * [ ] Configuration
     * [ ] Emails
     * [ ] Testing
+- Tranmission-remote
+- Custom vimscripts
+    * [ ] Git rebase HEAD~n
+- Pacman list hook to etckeeper
 - Weechat
+- BSPWM Better monitor Handling
+    * [ ] Polybar Config
+
+## To Do
+
+
+## Doing
+
 
 ## Done
 
@@ -306,6 +311,11 @@
     * [x] Installation
     * [x] Configuration
     * [x] Basic URLS
+- Rofi-Menu cleanup
+    * [x] Theme every useful menu
+    * [x] Delete unused files
+    * [x] Arrange scripts to one folder
+    * [x] Config script
 
 ## On Hold
 

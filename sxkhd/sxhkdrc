@@ -29,11 +29,11 @@ super + shift + c
 
 # rofi program launcher
 super + @space
-    rofi -show run
+    rofi -show run -theme $HOME/.config/rofi/themes/menu/apps.rasi
 
-# rofi scripts {bitwarden (password manager), calculator(rofi-calc), rofi-bluetooth, xrandrmenu}
-super + shift + {b, equal, F2, F5, F3}
-    {bwmenu --auto-lock 600, rofi -show calc -modi calc -no-show-match -no-sort, rofi-bluetooth, xrandrmenu, /home/jaomaloy/.config/rofi/scripts/./menu_network.sh}
+# rofi scripts {passwordmanager, qalc, bluezutils, network, xrandr}
+super + {b, equal, F2, F3, F5}
+    {bitwardenmenu, calculatormenu, bluetoothmenu, networkmenu, xrandrmenu}
 
 # make sxhkd reload its configuration files:
 super + ctrl + r
@@ -41,7 +41,7 @@ super + ctrl + r
 
 # Power menu
 super + Escape
-    $HOME/.config/rofi/scripts/./menu_powermenu.sh
+    powermenu
 
 #
 #  media controls
@@ -123,11 +123,11 @@ super + {_,shift + }{h,j,k,l}
     bspc node -{f,s} {west,south,north,east}
 
 # focus the node for the given path jump
-super + {p,v,comma,period}
+super + {ctrl + p,ctrl + b,comma,period}
     bspc node -f @{parent,brother,first,second}
 
 # focus the next/previous node in the current desktop
-super + {n, b}
+super + {n, p}
     bspc node -f {next,prev}.local
 
 # focus the next/previous desktop in the current monitor

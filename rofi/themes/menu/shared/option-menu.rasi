@@ -1,0 +1,9 @@
+/**
+ * Settings used in every rofi option menu:
+ *  - i3layoutmenu
+ *  - mpdmenu
+ *  - powermenu
+ *  - scrotmenu
+ */
+@import "settings.rasi"
+

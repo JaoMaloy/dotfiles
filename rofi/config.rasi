@@ -5,4 +5,5 @@ configuration {
   disable-history:    false;
   modi:               "drun";
   display-drun:       "apps";
+  theme: "lb";
 }
