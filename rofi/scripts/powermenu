@@ -21,10 +21,10 @@ options="$shutdown\n$reboot\n$lock\n$suspend\n$logout"
 chosen="$(echo -e "$options" | $rofi_command -p "祥  $uptime" -dmenu -selected-row 2 -m -1)"
 case $chosen in
     $shutdown)
-        ~/.config/rofi/scripts/./promptmenu.sh --yes-command "systemctl poweroff" --query "Shutdown?"
+        promptmenu --yes-command "systemctl poweroff" --query "Shutdown?"
         ;;
     $reboot)
-       ~/.config/rofi/scripts/./promptmenu.sh --yes-command "systemctl reboot" --query "Reboot?"
+        promptmenu --yes-command "systemctl reboot" --query "Reboot?"
         ;;
     $lock)
         multilockscreen --lock
