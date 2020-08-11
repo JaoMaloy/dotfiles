@@ -112,8 +112,6 @@
     * [ ] Git rebase HEAD~n
 - Pacman list hook to etckeeper
 - Weechat
-- BSPWM Better monitor Handling
-    * [ ] Polybar Config
 
 ## To Do
 
@@ -316,6 +314,11 @@
     * [x] Delete unused files
     * [x] Arrange scripts to one folder
     * [x] Config script
+- BSPWM Better monitor Handling
+    * [x] Polybar Config
+    * [x] xrandr query
+    * [x] BSPC rule
+    * [x] Monitor script
 
 ## On Hold
 

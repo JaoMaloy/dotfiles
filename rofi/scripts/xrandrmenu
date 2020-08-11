@@ -23,29 +23,42 @@ options="$option0\n$option1\n$option2\n$option3\n$option4\n$option5\n$option6\n$
 selected="$(echo -e "$options" | $rofi_command -dmenu)"
 case $selected in
     $option0)
-        xrandr --auto;;
+        xrandr --auto
+        bspc wm -r;;
     $option1)
-        xrandr --output eDP-1 --off;;
+        xrandr --output eDP-1 --off
+        bspc wm -r;;
     $option2)
-        xrandr --output DP-1 --off;;
-	$option3)
-		xrandr --output eDP-1 --primary;;
-	$option4)
-		xrandr --output DP-1 --primary;;
+        xrandr --output DP-1 --off
+        bspc wm -r;;
+    $option3)
+        xrandr --output eDP-1 --primary --auto
+        bspc wm -r;;
+    $option4)
+        xrandr --output DP-1 --primary --auto
+        bspc wm -r;;
     $option5)
-        xrandr --output DP-1 --same-as eDP-1;;
+        xrandr --output DP-1 --same-as eDP-1 --auto
+        bspc wm -r;;
     $option6)
-        xrandr --output DP-1 --right-of eDP-1;;
+        xrandr --output DP-1 --right-of eDP-1 --auto
+        bspc wm -r;;
     $option7)
-        xrandr --output DP-1 --left-of eDP-1;;
+        xrandr --output DP-1 --left-of eDP-1 --auto
+        bspc wm -r;;
     $option8)
-        xrandr --output DP-1 --above eDP-1;;
+        xrandr --output DP-1 --above eDP-1 --auto
+        bspc wm -r;;
     $option9)
-        xrandr --output DP-1 --below eDP-1;;
+        xrandr --output DP-1 --below eDP-1 --auto
+        bspc wm -r;;
     $option10)
-        xrandr --output DP-1 --rotate left;;
+        xrandr --output DP-1 --rotate left --auto
+        bspc wm -r;;
     $option11)
-        xrandr --output DP-1 --rotate right;;
+        xrandr --output DP-1 --rotate right --auto
+        bspc wm -r;;
     $option12)
-        xrandr --output DP-1 --rotate normal;;
+        xrandr --output DP-1 --rotate normal --auto
+        bspc wm -r;;
 esac
