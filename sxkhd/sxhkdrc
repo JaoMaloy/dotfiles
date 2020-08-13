@@ -35,6 +35,10 @@ super + @space
 super + {b, equal, F2, F3, F5}
     {bitwardenmenu, calculatormenu, bluetoothmenu, networkmenu, xrandrmenu}
 
+# show date and time as a notification
+super + d
+    notify-date
+
 # make sxhkd reload its configuration files:
 super + ctrl + r
     pkill -USR1 -x sxhkd; notify-send "Sxhkd refreshed!"
