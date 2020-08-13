@@ -1,6 +1,7 @@
 #! /bin/sh
 
 sxhkd &
+feh --bg-scale $HOME/Data/Wallpapers/spiderman.png &
 compton --config /home/jaomaloy/.config/compton/compton.conf -b &
 $HOME/.config/polybar/launch.sh &
 

@@ -38,5 +38,4 @@ xrandr --output DP-1 --auto &
 xsetroot -cursor_name left_ptr &
 mopidy &
 dunst &
-feh --bg-scale $HOME/Data/Wallpapers/spiderman.png &
 exec bspwm
