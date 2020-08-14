@@ -16,6 +16,10 @@ super + e
 
 # browser
 super + w
+    qutebrowser
+
+# firefox
+super + shift + w
     firefox-developer-edition
 
 super + shift + m
