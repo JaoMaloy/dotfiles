@@ -1,1 +1,26 @@
-https://www.archlinux.org/feeds/news/
+Linux
+https://www.reddit.com/r/linux/.rss Linux "~/r/Linux"
+https://www.archlinux.org/feeds/news/ Arch "~Arch Linux Org"
+https://security.archlinux.org/advisory/feed.atom Arch "~Arch Advisory"
+
+Sports
+https://basketballforever.com/feed NBA "~Basketball Forever"
+https://www.reddit.com/r/nba/.rss NBA "~/r/NBA"
+https://www.espn.com/espn/rss/nba/news NBA "~ESPN"
+https://www.reddit.com/r/nfl/.rss NFL "~/r/NFL"
+https://www.espn.com/espn/rss/nfl/news NFL "~ESPN"
+
+News
+https://hnrss.org/frontpage "Tech" "~Hacker News: Front Page"
+ttps://hackernoon.com/feed "Tech" "~Hacker Noon"
+https://hnrss.org/jobs "Tech" "~Hacker News: Jobs"
+https://hnrss.org/whoishiring "Tech" "~Hacker News: Who is hiring?"
+http://cdn.technologyreview.com/views/rss/ "Tech" "~MIT Technology Review: New"
+http://cdn.technologyreview.com/topnews.rss "Tech" "~MIT Technology Review: Top News"
+http://cdn.technologyreview.com/c/robotics/rss/ "Tech" "~MIT Technology Review: Robotics"
+http://cdn.technologyreview.com/c/mobile/rss/ "Tech" "~MIT Technology Review: Mobile"
+http://cdn.technologyreview.com/c/energy/rss/ "Tech" "~MIT Technology Review: Energy"
+http://cdn.technologyreview.com/c/computing/rss/ "Tech" "~MIT Technology Review: Computing"
+http://cdn.technologyreview.com/c/biomedicine/rss/ "Tech" "~MIT Technology Review: Biomedicine"
+http://feeds.feedburner.com/TechCrunch/ "Tech" "~Tech Crunch"
+https://www.who.int/rss-feeds/news-english.xml "Health" "~World Health Organization"

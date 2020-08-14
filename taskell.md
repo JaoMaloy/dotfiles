@@ -108,16 +108,33 @@
     * [ ] Emails
     * [ ] Testing
 - Tranmission-remote
-- Custom vimscripts
-    * [ ] Git rebase HEAD~n
-- Pacman list hook to etckeeper
-- Weechat
 
 ## To Do
 
+- Weechat
+    * [ ] Config Hotkeys
+    * [ ] Colors
+    * [ ] Feed: Linux stuff
+    * [ ] Feed: Languages
+- Custom vimscripts
+    * [ ] Git rebase HEAD~n
+    * [ ] Git show HEAD~n
 
 ## Doing
 
+- Pacman list hook to etckeeper
+    * [x] Code
+    * [ ] Test
+- RSS Feeds
+    * [x] Arch Linux News
+    * [x] Basketball/NBA News
+    * [x] NFL News
+    * [x] General Tech
+    * [ ] NOAH
+    * [x] Health
+    * [ ] Youtubes
+    * [ ] World News
+    * [ ] Linux General
 
 ## Done
 
