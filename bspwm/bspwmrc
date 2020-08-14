@@ -42,4 +42,7 @@ bspc config bottom_monocle_padding 8
 bspc rule -a firefoxdeveloperedition desktop='^4' follow=on
 bspc rule -a mpv desktop='^5' state=fullscreen follow=on
 bspc rule -a St:development desktop='^1' state=tiled follow=on
+bspc rule -a St:news desktop='^2' state=tiled follow=on
+bspc rule -a St:music desktop='^3' state=tiled follow=on
+bspc rule -a St:chat desktop='^6' state=tiled follow=on
 bspc rule -a Zathura state=tiled follow=on focus=on

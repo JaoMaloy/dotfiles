@@ -19,13 +19,13 @@ super + w
     firefox-developer-edition
 
 super + shift + m
-    st -e ncmpcpp
+    st -n music -e ncmpcpp
 
 super + shift + n
-    st -e newsboat
+    st -n news -e newsboat
 
 super + shift + c
-    st -e weechat
+    st -c chat -e weechat
 
 # rofi program launcher
 super + @space
