@@ -45,7 +45,7 @@ audio_output {
         type            "fifo"
         name            "Visualizer feed"
         path            "/tmp/mpd.fifo"
-        format          "44100:16:2"
+        format          "44100:16:1"
 }
 ##
 #
@@ -62,7 +62,7 @@ visualizer_output_name = "my_fifo"
 ##
 ## If you set format to 44100:16:2, make it 'yes'.
 ##
-visualizer_in_stereo = yes
+visualizer_in_stereo = no
 #
 ##
 ## Note: Below parameter defines how often ncmpcpp has to "synchronize"
@@ -71,7 +71,7 @@ visualizer_in_stereo = yes
 ## that sane values start with >=10.
 ##
 #
-visualizer_sync_interval = 30
+visualizer_sync_interval = 10
 #
 ##
 ## Note: To enable spectrum frequency visualization you need to compile ncmpcpp
@@ -80,11 +80,11 @@ visualizer_sync_interval = 30
 #
 ## Available values: spectrum, wave, wave_filled, ellipse.
 ##
-visualizer_type = spectrum
+visualizer_type = wave
 #
-visualizer_look = ●▮
+visualizer_look = "▞▋"
 #
-#visualizer_color = blue, cyan, green, yellow, magenta, red
+visualizer_color = magenta
 #
 ## Alternative subset of 256 colors for terminals that support it.
 ##
@@ -113,7 +113,7 @@ visualizer_look = ●▮
 #
 ## Defines how long messages are supposed to be visible.
 ##
-#message_delay_time = 5
+message_delay_time = 1
 #
 ##### song format #####
 ##
@@ -317,7 +317,7 @@ visualizer_look = ●▮
 ## Note: You can specify third character which will be used to build 'empty'
 ## part of progressbar.
 ##
-#progressbar_look = =>
+progressbar_look = ━━━
 #
 ## Available values: database, playlist.
 ##
@@ -341,17 +341,17 @@ visualizer_look = ●▮
 #
 #default_tag_editor_pattern = %n - %t
 #
-#header_visibility = yes
+header_visibility = no
 #
-#statusbar_visibility = yes
+statusbar_visibility = yes
 #
-#titles_visibility = yes
+titles_visibility = no
 #
 #header_text_scrolling = yes
 #
 #cyclic_scrolling = no
 #
-#lines_scrolled = 2
+lines_scrolled = 1
 #
 #lyrics_fetchers = lyricwiki, azlyrics, genius, sing365, lyricsmania, metrolyrics, justsomelyrics, jahlyrics, plyrics, tekstowo, internet
 #
@@ -442,9 +442,9 @@ visualizer_look = ●▮
 #
 #block_search_constraints_change_if_items_found = yes
 #
-#mouse_support = yes
+mouse_support = yes
 #
-#mouse_list_scroll_whole_page = yes
+mouse_list_scroll_whole_page = yes
 #
 #empty_tag_marker = <empty>
 #
@@ -454,7 +454,7 @@ visualizer_look = ●▮
 #
 #media_library_sort_by_mtime = no
 #
-#enable_window_title = yes
+enable_window_title = yes
 #
 ##
 ## Note: You can choose default search mode for search engine. Available modes
@@ -526,11 +526,11 @@ visualizer_look = ●▮
 #
 #color2 = green
 #
-#progressbar_color = black:b
+progressbar_color = black:b
 #
-#progressbar_elapsed_color = green:b
+progressbar_elapsed_color = blue
 #
-#statusbar_color = default
+statusbar_color = magenta
 #
 #statusbar_time_color = default:b
 #
