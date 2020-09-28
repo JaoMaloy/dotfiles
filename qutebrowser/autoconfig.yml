@@ -38,6 +38,7 @@ settings:
     global: false
   content.cookies.accept:
     '*://*.online.unionbankph.com/*': all
+    '*://*.protonmail.com/*': all
     '*://*.www.netflix.com/*': all
     global: never
     https://www.netflix.com/browse: all
@@ -54,7 +55,9 @@ settings:
   content.javascript.enabled:
     '*://*.efss.qloud.my/*': true
     '*://*.html.duckduckgo.com/*': true
+    '*://*.mail.protonmail.com/*': true
     '*://*.online.unionbankph.com/*': true
+    '*://*.protonmail.com/*': true
     '*://*.www.netflix.com/*': true
     global: false
     https://online.unionbankph.com/online-banking/login#!/login: true
