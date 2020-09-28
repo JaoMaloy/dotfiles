@@ -40,6 +40,7 @@ bspc config pointer_action3 resize_corner
 bspc config bottom_monocle_padding 8
 
 bspc rule -a firefoxdeveloperedition desktop='^4' follow=on
+bspc rule -a qutebrowser desktop='^4' follow=on
 bspc rule -a mpv desktop='^5' state=fullscreen follow=on
 bspc rule -a St:development desktop='^1' state=tiled follow=on
 bspc rule -a St:news desktop='^2' state=tiled follow=on
