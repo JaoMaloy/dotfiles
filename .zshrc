@@ -118,5 +118,7 @@ alias cp='/usr/local/bin/cpg -g'
 alias mv='/usr/local/bin/mvg -g'
 alias pfzf="pacman -Qq | fzf --preview 'pacman -Qil {}' --layout=reverse --bind 'enter:execute(pacman -Qil {} | less)'"
 
+eval "$(zoxide init zsh)"
+
 source /usr/share/fzf/completion.zsh
 source /usr/share/fzf/key-bindings.zsh
