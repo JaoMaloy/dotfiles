@@ -7,10 +7,10 @@ $HOME/.config/polybar/launch.sh &
 
 monitors=$(xrandr --listactivemonitors | grep "Monitors" | cut -d" " -f2)
 if [[ $monitors == 1 ]]; then
-    bspc monitor eDP-1 -d 1 2 3 4 5 6
+    bspc monitor eDP-1 -d 1 2 3 4
 elif [[ $monitors == 2 ]]; then
-    bspc monitor eDP-1 -d 1 2 3
-    bspc monitor DP-1 -d 4 5 6
+    bspc monitor eDP-1 -d 1 3 5
+    bspc monitor DP-1 -d 2 4 6
 else
     bspc monitor eDP-1 -d 1 2
     bspc monitor DP-1 -d 3 4
@@ -39,11 +39,11 @@ bspc config pointer_action2 resize_side
 bspc config pointer_action3 resize_corner
 bspc config bottom_monocle_padding 8
 
-bspc rule -a firefoxdeveloperedition desktop='^4' follow=on
-bspc rule -a qutebrowser desktop='^4' follow=on
-bspc rule -a mpv desktop='^5' state=fullscreen follow=on
+bspc rule -a firefoxdeveloperedition desktop='^2' follow=on
+bspc rule -a qutebrowser desktop='^2' follow=on
+bspc rule -a mpv desktop='^3' state=fullscreen follow=on
 bspc rule -a St:development desktop='^1' state=tiled follow=on
 bspc rule -a St:news desktop='^2' state=tiled follow=on
 bspc rule -a St:music desktop='^3' state=tiled follow=on
-bspc rule -a St:chat desktop='^6' state=tiled follow=on
+bspc rule -a St:chat desktop='^2' state=tiled follow=on
 bspc rule -a Zathura state=tiled follow=on focus=on
