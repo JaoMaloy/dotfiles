@@ -62,6 +62,7 @@ settings:
     global: false
     https://online.unionbankph.com/online-banking/login#!/login: true
   content.notifications:
+    https://www.netflix.com: false
     https://www.reddit.com: false
   content.webgl:
     global: false
