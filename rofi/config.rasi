@@ -5,5 +5,5 @@ configuration {
   disable-history:    false;
   modi:               "drun";
   display-drun:       "apps";
-  theme: "lb";
+  theme: "~/development/projects/dotfiles/rofi/themes/menu/general.rasi";
 }

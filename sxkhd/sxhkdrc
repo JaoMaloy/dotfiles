@@ -33,7 +33,7 @@ super + shift + c
 
 # rofi program launcher
 super + @space
-    rofi -show run -theme $HOME/.config/rofi/themes/menu/apps.rasi
+    rofi -show run
 
 # rofi scripts {passwordmanager, qalc, bluezutils, network, xrandr}
 super + {b, equal, F2, F3, F5}
