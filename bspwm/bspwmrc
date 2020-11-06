@@ -46,4 +46,5 @@ bspc rule -a St:development desktop='^1' state=tiled follow=on
 bspc rule -a St:news desktop='^2' state=tiled follow=on
 bspc rule -a St:music desktop='^3' state=tiled follow=on
 bspc rule -a St:chat desktop='^2' state=tiled follow=on
+bspc rule -a St:task desktop='^1' state=tiled follow=on
 bspc rule -a Zathura state=tiled follow=on focus=on

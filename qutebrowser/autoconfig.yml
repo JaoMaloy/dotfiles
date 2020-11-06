@@ -11,8 +11,10 @@ settings:
   bindings.commands:
     global:
       normal:
-        <Space>v: spawn mpv {url}
+        ;bw: spawn --userscript qute-bitwarden
+        ;v: spawn mpv {url}
         ta: set-cmd-text -s :spawn --userscript taskadd
+        v: null
   bindings.key_mappings:
     global:
       <Ctrl-6>: <Ctrl-^>
