@@ -29,10 +29,10 @@ super + shift + n
     st -n news -e newsboat
 
 super + shift + c
-    st -c chat -e weechat
+    st -n chat -e weechat
 
 super + shift + t
-    st -c task -e taskwarrior-tui
+    st -n task -e taskwarrior-tui
 
 # rofi program launcher
 super + @space
