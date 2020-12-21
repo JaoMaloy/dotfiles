@@ -1,0 +1,9 @@
+
+[Default Applications]
+image/png=sxiv.desktop
+image/jpeg=sxiv.desktop
+image/jpg=sxiv.desktop
+application/octet=mpv.desktop
+application/pdf=org.pwmt.zathura.desktop
+x-scheme-handler/magnet=torrent.desktop
+application/x-bittorrent=torrent.desktop

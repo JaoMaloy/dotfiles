@@ -10,6 +10,9 @@ PATH=$ANDROID_HOME/emulator:$PATH
 export JAVA_HOME='/usr/lib/jvm/java-8-openjdk'
 export ANDROID_SDK_ROOT='/opt/android-sdk'
 export EDITOR='nvim'
+export GOPATH='$HOME/development/go'
+export SUDO_ASKPASS='/usr/bin/ssh-askpass'
+export SSH_ASKPASS='/usr/bin/ssh-askpass'
 
 # Path to your oh-my-zsh installation.
 export ZSH="/home/jaomaloy/.oh-my-zsh"
@@ -124,4 +127,4 @@ eval "$(zoxide init zsh)"
 source /usr/share/fzf/completion.zsh
 source /usr/share/fzf/key-bindings.zsh
 
-source ~/.profile
+# source $HOME/.profile

@@ -165,3 +165,5 @@
 /* *.color19:      base02 */
 /* *.color20:      base04 */
 /* *.color21:      base06 */
+
+/* ssh-askpass*background: #00000000 */

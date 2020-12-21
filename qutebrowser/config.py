@@ -8,5 +8,5 @@ dracula.draw.blood(c, {})
 c.completion.shrink = True
 
 config.bind(';v', 'spawn mpv {url}')
-config.bind(';bw', 'spawn --userscript qute-bitwarden')
+config.bind(';p', 'spawn --userscript qute-bitwarden')
 

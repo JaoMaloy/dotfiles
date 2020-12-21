@@ -35,8 +35,8 @@ super + shift + t
     st -n task -e taskwarrior-tui
 
 # rofi program launcher
-super + @space
-    rofi -show run
+super + space
+    rofi -show drun -show-icons -theme $HOME/development/projects/dotfiles/rofi/themes/menu/general.rasi -display-drun ""
 
 # rofi scripts {passwordmanager, qalc, bluezutils, network, xrandr}
 super + {b, equal, F2, F3, F5}
@@ -63,27 +63,27 @@ super + {shift + comma, shift + period, shift + slash, slash}
 
 # change volume percentage
 XF86AudioRaiseVolume
-    sh -c "pactl set-sink-mute 0 false ; pactl set-sink-volume 0 +5%"
+    volume-control up
 
 XF86AudioLowerVolume
-    sh -c "pactl set-sink-mute 0 false ; pactl set-sink-volume 0 -5%"
+    volume-control down
 
 # toggle mute
 XF86AudioMute
-    pactl set-sink-mute 0 toggle
+    volume-control mute
 
 XF86MonBrightnessUp
-    sudo light -A 10
+    brightness-control up
 
 XF86MonBrightnessDown
-    sudo light -U 10
+    brightness-control down
 
 # toggle microphone
 super + ctrl + alt + shift + m
     pactl set-source-mute 1 toggle; notify-send "Microphone Toggled"
 
 # screenshots
-super + shift + Print
+super + shift + s
     sleep 1 && scrot --select -e 'mv $f ~/Pictures/screenshots/'
 
 Print

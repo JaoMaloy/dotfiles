@@ -12,30 +12,46 @@
 /* ########### */
 
 * {
-  /* General */
-  text-font:                            "Comfortaa 14";
-  icon-font:                            "Hurmit Nerd Font Mono 48";
-  icon-font-small:                      "Hurmit Nerd Font Mono 24";
-
-  option-6-listview-spacing:            10px;
-
-  menu-window-padding:                   25px 35px;
-  menu-inputbar-margin:                  10px 0px;
-  menu-prompt-padding:                   10px 20px 10px 20px;
-  menu-prompt-margin:                    0px 0px 0px -2px;
-  menu-element-border:                   10px;
-  menu-element-padding:                  25px 35px 20px -40px;
+    selected-normal-foreground:  rgba ( 0, 0, 0, 90 % );
+    foreground:                  rgba ( 17, 170, 170, 100 % ); /* sky blue */
+    normal-foreground:           @foreground;
+    alternate-normal-background: rgba ( 0, 0, 0, 7 % );
+    red:                         rgba ( 220, 50, 47, 100 % );
+    selected-urgent-foreground:  rgba ( 0, 0, 0, 100 % );
+    blue:                        rgba ( 38, 139, 210, 100 % );
+    urgent-foreground:           rgba ( 255, 153, 153, 100 % );
+    alternate-urgent-background: rgba ( 255, 255, 255, 7 % );
+    active-foreground:           rgba ( 170, 170, 17, 100 % );
+    lightbg:                     rgba ( 238, 232, 213, 100 % );
+    selected-active-foreground:  rgba ( 0, 0, 0, 100 % );
+    alternate-active-background: rgba ( 255, 255, 255, 7 % );
+    background:                  rgba ( 0, 0, 0, 93 % );
+    bordercolor:                 rgba ( 17, 170, 170, 100 % );
+    alternate-normal-foreground: @foreground;
+    normal-background:           rgba ( 0, 0, 0, 0 % );
+    lightfg:                     rgba ( 88, 104, 117, 100 % );
+    selected-normal-background:  rgba ( 17, 170, 170, 100 % );
+    border-color:                @foreground;
+    spacing:                     2;
+    separatorcolor:              rgba ( 17, 170, 170, 100 % );
+    urgent-background:           rgba ( 0, 0, 0, 0 % );
+    selected-urgent-background:  rgba ( 255, 153, 153, 100 % );
+    alternate-urgent-foreground: @urgent-foreground;
+    background-color:            rgba ( 0, 0, 0, 0 % );
+    alternate-active-foreground: @active-foreground;
+    active-background:           rgba ( 0, 0, 0, 0 % );
+    selected-active-background:  rgba ( 170, 170, 17, 100 % );
 }
-
 /* ########### */
 
 #window {
-  width: 40%;
-  height: 23%;
-  anchor: center;
-  location: center;
-  x-offset: 0%;
-  y-offset: 0%;
+  background-color: @background;
+  border: 0;
+  padding: 5;
+  width: 20%;
+  height: 350px;
+  x-offset: 755px;
+  y-offset: -340px;
 }
 
 /* ########### */

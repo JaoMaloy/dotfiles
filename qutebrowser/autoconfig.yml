@@ -39,8 +39,11 @@ settings:
   content.canvas_reading:
     global: false
   content.cookies.accept:
+    '*://*.github.com/*': all
+    '*://*.localhost/*': all
     '*://*.online.unionbankph.com/*': all
     '*://*.protonmail.com/*': all
+    '*://*.www.colfinancial.com/*': all
     '*://*.www.netflix.com/*': all
     global: never
     https://www.netflix.com/browse: all
@@ -56,10 +59,14 @@ settings:
       Chrome/83.0.4103.61 Safari/537.36
   content.javascript.enabled:
     '*://*.efss.qloud.my/*': true
+    '*://*.github.com/*': true
     '*://*.html.duckduckgo.com/*': true
+    '*://*.localhost/*': true
     '*://*.mail.protonmail.com/*': true
     '*://*.online.unionbankph.com/*': true
     '*://*.protonmail.com/*': true
+    '*://*.start.duckduckgo.com/*': true
+    '*://*.www.colfinancial.com/*': true
     '*://*.www.netflix.com/*': true
     global: false
     https://online.unionbankph.com/online-banking/login#!/login: true
