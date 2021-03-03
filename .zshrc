@@ -27,13 +27,10 @@ HISTSIZE=1000
 SAVEHIST=1000
 HISTFILE=~/.cache/zsh/history
 
-# NNN Configuration
-# NNN_BMS=''
-export NNN_FIFO='/tmp/nnn.fifo'
-export NNN_PLUG='p:preview-tui;d:nmount;i:imgview;c:fzcd;z:fzz;m:mimelist;n:bulknew;f:finder'
-export NNN_BMS='m:~/Videos/Movies;t:~/Videos/TV;p:~/development/projects;P:~/Pictures;c:~/.config'
-
 eval "$(starship init zsh)"
+
+# Load nnn config
+[ -f "$HOME/.config/shell/nnn_config" ] && source "$HOME/.config/shell/nnn_config"
 
 # Load aliases
 [ -f "$HOME/.config/shell/.shell_aliases" ] && source "$HOME/.config/shell/.shell_aliases"
