@@ -108,21 +108,10 @@ export NNN_FIFO='/tmp/nnn.fifo'
 export NNN_PLUG='p:preview-tui;d:nmount;i:imgview;c:fzcd;z:fzz;m:mimelist;n:bulknew;f:finder'
 export NNN_BMS='m:~/Videos/Movies;t:~/Videos/TV;p:~/development/projects;P:~/Pictures;c:~/.config'
 
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh
-alias cp='/usr/local/bin/cpg -g'
-alias mv='/usr/local/bin/mvg -g'
-alias pfzf="pacman -Qq | fzf --preview 'pacman -Qil {}' --layout=reverse --bind 'enter:execute(pacman -Qil {} | less)'"
-alias n3='nnn -d -r'
-alias taskt='taskwarrior-tui'
+eval "$(starship init zsh)"
 
-eval "$(zoxide init zsh)"
+# Load aliases
+[ -f "$HOME/.config/shell/.shell_aliases" ] && source "$HOME/.config/shell/.shell_aliases"
 
 source /usr/share/fzf/completion.zsh
 source /usr/share/fzf/key-bindings.zsh

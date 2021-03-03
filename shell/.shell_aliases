@@ -1,0 +1,6 @@
+alias cp='/usr/local/bin/cpg -g'
+alias mv='/usr/local/bin/mvg -g'
+alias pfzf="pacman -Qq | fzf --preview 'pacman -Qil {}' --layout=reverse --bind 'enter:execute(pacman -Qil {} | less)'"
+alias n3='nnn -d -r -e'
+alias taskt='taskwarrior-tui'
+
