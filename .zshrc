@@ -14,8 +14,11 @@ export GOPATH='/home/jaomaloy/Development/go'
 export SUDO_ASKPASS='/usr/bin/ssh-askpass'
 export SSH_ASKPASS='/usr/bin/ssh-askpass'
 
-# Path to your oh-my-zsh installation.
-export ZSH="/home/jaomaloy/.oh-my-zsh"
+autoload -U compinit
+zstyle ':completion:*' menu select
+zmodload zsh/complist
+compinit
+_comp_options+=(globdots)	
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
