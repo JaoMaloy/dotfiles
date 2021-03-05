@@ -3,4 +3,8 @@ alias mv='/usr/local/bin/mvg -g'
 alias pfzf="pacman -Qq | fzf --preview 'pacman -Qil {}' --layout=reverse --bind 'enter:execute(pacman -Qil {} | less)'"
 alias n3='n -d -r -e'
 alias taskt='taskwarrior-tui'
+alias diff='diff --color=auto'
+alias grep='grep --color=auto'
+alias ip='ip -color=auto'
+alias ls='ls --color=auto'
 
