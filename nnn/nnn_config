@@ -1,7 +1,7 @@
 # NNN Configuration
 # NNN_BMS=''
 export NNN_FIFO='/tmp/nnn.fifo'
-export NNN_PLUG='p:preview-tui;d:nmount;i:imgview;c:fzcd;z:fzz;m:mimelist;n:bulknew;f:finder'
+export NNN_PLUG='p:preview-tui;d:nmount;i:imgview;c:fzcd'
 export NNN_BMS='m:~/Videos/Movies;t:~/Videos/TV;p:~/development/projects;P:~/Pictures;c:~/.config'
 
 n ()
