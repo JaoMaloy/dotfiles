@@ -26,7 +26,7 @@ HISTFILE=~/.cache/zsh/history
 eval "$(starship init zsh)"
 
 # Load nnn config
-[ -f "$HOME/.config/shell/nnn_config" ] && source "$HOME/.config/shell/nnn_config"
+[ -f "$HOME/.config/nnn/nnn_config" ] && source "$HOME/.config/nnn/nnn_config"
 
 # Load aliases
 [ -f "$HOME/.config/shell/.shell_aliases" ] && source "$HOME/.config/shell/.shell_aliases"
