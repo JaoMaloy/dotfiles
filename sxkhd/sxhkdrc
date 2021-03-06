@@ -8,7 +8,7 @@ super + Return
 
 # development environment
 super + shift + Return
-    st -n development -e /usr/local/bin/autotmux
+    st -n development -e tmuxattach_st
 
 # file explorer
 super + e
