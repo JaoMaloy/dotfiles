@@ -12,7 +12,7 @@ super + shift + Return
 
 # file explorer
 super + e
-    st -n explorer -e nnn -d -r
+    st -n explorer -e nnn -d -r -e
 
 # browser
 super + w
