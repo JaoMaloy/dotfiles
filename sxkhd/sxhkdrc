@@ -36,7 +36,7 @@ super + shift + t
 
 # rofi program launcher
 super + space
-    rofi -show drun -show-icons -theme $HOME/development/projects/dotfiles/rofi/themes/menu/general.rasi -display-drun ""
+    rofi -show drun -no-show-match -show-icons -display-drun ""
 
 # rofi scripts {passwordmanager, qalc, bluezutils, network, xrandr}
 super + {b, equal, F2, F3, F5}
