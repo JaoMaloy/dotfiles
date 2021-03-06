@@ -1,8 +1,8 @@
 #! /bin/sh
 
-sxhkd &
-feh --bg-scale $HOME/Data/Wallpapers/spiderman.png &
-compton --config /home/jaomaloy/.config/compton/compton.conf -b &
+sxhkd -c $HOME/.config/sxkhd/sxhkdrc &
+feh --bg-scale $HOME/Pictures/the_valley.webp &
+compton --config $HOME/.config/compton/compton.conf -b &
 $HOME/.config/polybar/launch.sh &
 dunstify -u normal "Welcome $(whoami)!" &
 
