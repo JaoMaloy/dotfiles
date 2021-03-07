@@ -1,0 +1,38 @@
+format = """
+$shlvl\
+$kubernetes\
+$python\
+$directory\
+$git_branch\
+$git_commit\
+$git_state\
+$git_status\
+$hg_branch\
+$docker_context\
+$package\
+$cmake\
+$terraform\
+$vagrant\
+$nix_shell\
+$aws\
+$gcloud\
+$openstack\
+$env_var\
+$crystal\
+$custom\
+$line_break\
+$lua\
+$jobs\
+$character
+"""
+
+[git_branch]
+format = "on [$branch](bold purple) "
+
+[python]
+format = "[$virtualenv]($style)"
+
+[character]
+success_symbol = "[»](bold green)"
+error_symbol = "[»](bold red)"
+vicmd_symbol = "[«](bold cyan)"
