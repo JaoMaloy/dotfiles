@@ -34,7 +34,7 @@ fi
 
 udiskie &
 xss-lock -l -- multilockscreen --lock &
-xrandr --output DP-1 --auto &
+xrandr --output eDP-1 --auto &
 xsetroot -cursor_name left_ptr &
 mopidy &
 dunst &
