@@ -7,25 +7,7 @@
  *
  */
 
-configuration {
-	font:							"Iosevka Nerd Font 10";
-    show-icons:                     true;
-	icon-theme: 					"Fira Code";
-    display-drun: 					"";
-    drun-display-format:            "{name}";
-    disable-history:                false;
-    fullscreen:                     false;
-	hide-scrollbar: 				true;
-	sidebar-mode: 					false;
-}
-
-* {
-    al:  #00000000;
-    bg:  #ffffff40;
-    se:  rgba ( 255, 255, 255, 7 % );
-    fg:  #ffffffff;
-    ac:  #00000050;
-}
+@import "shared/colorschemes/big_sur_colors.rasi"
 
 window {
     transparency:                   "real";
@@ -35,8 +17,6 @@ window {
 	border-color:					@ac;
     border-radius:                  12px;
 	width:							15%;
-    x-offset:                       -802px;
-    y-offset:                       -394px;
 }
 
 prompt {

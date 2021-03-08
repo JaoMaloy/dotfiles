@@ -1,9 +1,12 @@
 configuration {
-  show-icons:         true;
-  cycle:              true;
-  hide-scrollbar:     true;
-  disable-history:    false;
-  modi:               "drun";
-  display-drun:       "apps";
-  theme: "~/.config/rofi/themes/menu/big_sur.rasi";
+    show-icons:                     true;
+    font:                           "Iosevka Nerd Font 10";
+    cycle:                          true;
+    hide-scrollbar:                 true;
+    disable-history:                false;
+    modi:                           "drun";
+    display-drun:                   "apps";
+    fullscreen:                     false;
+    sidebar-mode:                   false;
+    theme: "~/.config/rofi/themes/menu/big_sur.rasi";
 }

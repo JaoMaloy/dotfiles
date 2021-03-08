@@ -36,11 +36,11 @@ super + shift + t
 
 # rofi program launcher
 super + space
-    rofi -show drun -no-show-match -show-icons -display-drun ""
+    appsmenu
 
 # rofi scripts {passwordmanager, qalc, bluezutils, network, xrandr}
 super + {b, equal, F2, F3, F5}
-    {bitwardenmenu, calculatormenu, bluetoothmenu, networkmenu, xrandrmenu}
+    {bitwardenmenu, calculatormenu, bluetoothmenu, wifimenu, xrandrmenu}
 
 # show date and time as a notification
 super + d
