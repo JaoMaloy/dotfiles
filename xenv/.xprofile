@@ -1,0 +1,6 @@
+udiskie &
+# xss-lock -l -- multilockscreen --lock &
+xrandr --output eDP-1 --auto &
+xsetroot -cursor_name left_ptr &
+mopidy &
+dunst &
