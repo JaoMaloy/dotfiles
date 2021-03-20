@@ -10,6 +10,7 @@ export JAVA_HOME='/usr/lib/jvm/java-8-openjdk'
 export ANDROID_SDK_ROOT='/opt/android-sdk'
 export EDITOR='nvim'
 export GOPATH='/home/jaomaloy/Development/go'
+export PATH=$PATH:$GOPATH/bin
 export SUDO_ASKPASS='/usr/bin/ssh-askpass'
 export SSH_ASKPASS='/usr/bin/ssh-askpass'
 
