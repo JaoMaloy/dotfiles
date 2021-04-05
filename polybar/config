@@ -109,7 +109,7 @@ font-3 = FontAwesome:style=Regular:size=10;2
 
 modules-left = logo bspwm
 modules-center = mpd
-modules-right = system-usb-udev network battery date
+modules-right = backlight-acpi pulseaudio network battery date
 
 ; tray-position = left
 ;tray-padding = 2
