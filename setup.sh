@@ -9,3 +9,14 @@ polybar_dir=$HOME/.config/polybar
 [ -d $nvim_lua_dir ] || mkdir $nvim_lua_dir
 [ -d $nvim_themes_dir ] || mkdir $nvim_themes_dir
 
+isPackageInstalled() {
+  pacman -Qi "$packageName" &> /dev/null
+  echo $?
+}
+
+if [ $(isPackageInstalled 'compton') ]; then 
+    # do things here
+    pacman -Syu compton
+fi
+
+
