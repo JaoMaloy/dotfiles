@@ -49,9 +49,6 @@ symbol = " "
 [nodejs]
 symbol = " "
 
-[package]
-symbol = " "
-
 [perl]
 symbol = " "
 
@@ -69,3 +66,10 @@ symbol = " "
 
 [swift]
 symbol = "ﯣ "
+
+[package]
+disabled = true
+
+add_newline = true
+
+scan_timeout = 50
